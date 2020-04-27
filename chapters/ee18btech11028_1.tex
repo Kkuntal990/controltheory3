@@ -58,8 +58,8 @@ The system flow can be described as,
     N = Z - P
 \end{align}
 
-where Z is \# unstable poles of closed loop transfer function, P is \# unstable poles of 
-and N is clockwise encirclements of \brak{-1/K,0}.
+where Z is \#unstable poles of closed loop transfer function, P is \#unstable poles of 
+and N is \#clockwise encirclement of \brak{-1/K,0}.
 
 For stable system, 
 \begin{align}
@@ -98,6 +98,13 @@ And also,
 \begin{align}
     K > 0
 \end{align}
+\begin{align}
+    \implies 0 < K < 810     
+\end{align}
 
 
+The following python code generates  Fig. \ref{fig:ee18btech11028_1_fig1}
+\begin{lstlisting}
+    codes/ee18btech11028_1.py
+\end{lstlisting}
 \end{enumerate}
