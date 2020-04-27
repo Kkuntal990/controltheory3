@@ -50,9 +50,9 @@ sub_axes.set_yticks([])
 
 
 #if using termux
-plt.savefig('./figs/ee18btech11028.pdf')
-plt.savefig('./figs/ee18btech11028.eps')
-subprocess.run(shlex.split("termux-open ./figs/ee18btech11028.pdf"))
+plt.savefig('./figs/ee18btech11028_1.pdf')
+plt.savefig('./figs/ee18btech11028_1.eps')
+subprocess.run(shlex.split("termux-open ./figs/ee18btech11028_1.pdf"))
 #else
 
 plt.show()
