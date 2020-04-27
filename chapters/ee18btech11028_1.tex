@@ -27,7 +27,7 @@ The system flow can be described as,
         % We start by placing the blocks
         \node [input, name=input] {X(s)};
         \node [sum, right of=input] (sum) {};
-        \node [block, right of=sum] (controller) {G(s)};
+        \node [block, right of=sum] (controller) {$\frac{1}{s(s+6)}$};
         \node [block, right of=controller] (system) {$K$};
         % We draw an edge between the controller and system block to 
         % calculate the coordinate u. We need it to place the measurement block. 
@@ -47,6 +47,57 @@ The system flow can be described as,
     \caption{}
     \label{fig:ee18btech11028_1_fig1}
 \end{figure}
+
+\begin{align}
+    G_{1}(s) = \frac{1}{s(s+6)}. 
+    \label{eq:ee18btech11028_1_3}
+\end{align}
+
+\textbf{Nyquist Stability Criterion:}
+\begin{align}
+    N = Z - P
+\end{align}
+
+where Z is \# unstable poles of closed loop transfer function, P is \# unstable poles of 
+and N is clockwise encirclements of \brak{-1/K,0}.
+
+For stable system, 
+\begin{align}
+    Z = 0
+\end{align}
+
+From \ref{eq:ee18btech11028_1_2} and \ref{eq:ee18btech11028_1_3},
+\begin{align}
+    P = 0
+\end{align}
+
+\begin{align}
+    \implies N = 0
+\end{align}
+
+
+
+\begin{figure}[!h]
+\includegraphics[width=\columnwidth]{./figs/ee18btech11028/ee18btech11028_1.eps}
+  \caption{Nyquist plot for $G_{1}(s)H(s)$}
+  \label{fig:ee18btech11028_1_fig1}
+\end{figure}
+
+Since, there is a zero at origin, an infinite radius half circle will enclose the right hand side of end points of the Nyquist plot.
+
+\begin{align}
+    \implies \frac{-1}{K} < \frac{-1}{810}
+\end{align}
+
+\begin{align}
+    \implies K < 810
+\end{align}
+
+And also,
+
+\begin{align}
+    K > 0
+\end{align}
 
 
 \end{enumerate}
