@@ -2,12 +2,10 @@
 \numberwithin{equation}{enumi}
 \item Using Nyquist criterion find the range of $K$ for which closed loop system is stable.
 \begin{align}
-    G(s) = \frac{K}{s(s+6)}. 
+    G(s) &= \frac{K}{s(s+6)}. 
     \label{eq:ee18btech11028_1_1}
-\end{align}
-And,
-\begin{align}
-    H(s) = \frac{1}{s+9}
+\\
+    H(s) &= \frac{1}{s+9}
     \label{eq:ee18btech11028_1_2}
 \end{align}
 
@@ -16,7 +14,7 @@ The system flow can be described as,
 
 \begin{figure}[!ht]
     \begin{center}
-        \resizebox{\columnwidth}{!}{\input{./figs/ee18btech11028_1_fig1.tex}}
+        \resizebox{\columnwidth}{!}{\input{./figs/ee18btech11028/ee18btech11028_1_fig1.tex}}
     \end{center}
     \caption{}  
     \label{fig:ee18btech11028_1_fig1}
@@ -31,13 +29,10 @@ The system flow can be described as,
 For Nyquist plot, 
 
 \begin{align}
-    \text{Im} \cbrak{G_{1}(\j \omega)H(\j \omega)}= \frac{-(54 - \omega^{2})}{(\omega)(\omega^{2}+56)(\omega^{2} + 81)}
+    \text{Im} \cbrak{G_{1}(\j \omega)H(\j \omega)} &= \frac{-(54 - \omega^{2})}{(\omega)(\omega^{2}+56)(\omega^{2} + 81)}
     \label{eq:ee18btech11028_1_5}
-\end{align}
-
-
-\begin{align}
-    \text{Re} \cbrak{G_{1}(\j \omega)H(\j \omega)}= \frac{-15 \omega}{(\omega)(\omega^{2}+56)(\omega^{2} + 81)}
+\\
+    \text{Re} \cbrak{G_{1}(\j \omega)H(\j \omega)} &= \frac{-15 \omega}{(\omega)(\omega^{2}+56)(\omega^{2} + 81)}
     \label{eq:ee18btech11028_1_4}
 \end{align}
 
@@ -67,9 +62,7 @@ For stable system,
 From \eqref{eq:ee18btech11028_1_2} and \eqref{eq:ee18btech11028_1_3},
 \begin{align}
     P = 0
-\end{align}
-
-\begin{align}
+\\
     \implies N = 0
     \label{eq:ee18btech11028_1_7}
 \end{align}
@@ -88,8 +81,7 @@ And also,
 
 \begin{align}
     K > 0
-\end{align}
-\begin{align}
+\\
     \implies 0 < K < 810     
 \end{align}
 
